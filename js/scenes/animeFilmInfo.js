@@ -7,19 +7,25 @@
     init: function () {
       this.$el = $(".js-scene-filmInfo");
 
+      this.$el.on("click", ".back", this.onItemBackClick)
+      this.$el.on("click", ".voiceover", this.onItemClick)
+
       this.renderItems(App.filmInfo);
       _inited = true;
-      $(".back").on("click", function (event) {
-         var scene = event.currentTarget.getAttribute("data-content");
-         $(".header").show();
-         window.App.showContent(scene);
-       });
-       $(".voiceover").on("click", function (e) {
-         var url = e.currentTarget.getAttribute("data-url");
-      Player.play({
-        url: url,
-      });
-       });
+    },
+
+      onItemBackClick: function (e) {
+      var scene = e.currentTarget.getAttribute("data-content");
+      var header = $(".header")
+      header.show();
+      window.App.showContent(scene);
+    },
+    onItemClick: function (e) {
+      var url = e.currentTarget.getAttribute("data-url");
+         Player.play({
+           url: url,
+           type: vod,
+         });
     },
 
     show: function () {

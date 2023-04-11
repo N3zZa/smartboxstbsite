@@ -21,15 +21,17 @@
         $bg = $('.bg');
       var wrap = this.$wrap
       self.showContent('video');
-      // click on menu item
-      $(".navbar").on("click", ".movieitem", function (e) {
-        var filmPage = e.currentTarget.getAttribute("data-film");
-        var scene = e.currentTarget.getAttribute("data-content");
-        $(".header").hide() 
-        self.showContent(scene);
-        $(".filmInfoPage").hide()
-        $(`#${filmPage}`).show()
-      });
+      var header = $(".header");
+      var navbar = $(".navbar");
+        // click on menu item
+        navbar.on("click", ".movieitem", function (e) {
+          var filmPage = e.currentTarget.getAttribute("data-film");
+          var scene = e.currentTarget.getAttribute("data-content");
+          header.hide();
+          self.showContent(scene);
+          $(".filmInfoPage").hide();
+          $(`#${filmPage}`).show();
+        });
        
       $(document.body).on({
         // on keyboard 'd' by default
