@@ -1,0 +1,93 @@
+.film-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    }
+
+    li {
+        list-style-type: none;
+    }
+.film-info_inner {
+    display: flex;
+    padding: 40px;
+}
+.UconCinema_logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+p {
+    margin: 0;
+}
+.logo_text h4 {
+    margin: 0;
+    color: #fff;
+}
+
+.film-main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    max-width: 75%;
+}
+.film-info {
+    display: flex;
+    gap: 20px;
+}
+
+.film-info img {
+    width: 25%;
+    margin-bottom: 10px;
+}
+
+
+.film-dscrtn {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-bottom: 40px;
+}
+
+.actors {
+    margin-bottom: 15px;
+}
+
+.film-dscrtn h2 {
+    color: yellow;
+}
+.film-nav {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #553c64;
+    width: 30%;
+    height: 100%;
+}
+.film-nav_logo {
+    background: #3b3041;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.back {
+    font-size: 22px;
+        padding: 20px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.151);
+        margin-left: -40px;
+}
+
+.voiceover {
+    font-size: 22px;
+    padding: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.151);
+    margin-left: -40px;
+    padding-left: 40px;
+}
