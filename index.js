@@ -456,9 +456,9 @@ p {
 <div id="app" class="wrap">
     <div class='bg'></div>
         <div class="header navigation-items">
-                  <li class="navigation-item nav-item" id='Films'>Фильмы</li>
-                  <li class="navigation-item nav-item" id='Serials'>Сериалы</li>
-                  <li class="navigation-item nav-item" id='Cartoons'>Мультфильмы</li>
+                <li class="navigation-item nav-item" id='Films'>Фильмы</li>
+                <li class="navigation-item nav-item" id='Serials'>Сериалы</li>
+                <li class="navigation-item nav-item" id='Cartoons'>Мультфильмы</li>
                 <h2>Аниме</h2>
                 <li class="navigation-item nav-item" id='Premieres'>Премьеры</li>
                 <li class="navigation-item nav-item" id='Compilations'>Подборки</li>
