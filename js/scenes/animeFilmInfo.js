@@ -6,7 +6,6 @@
     init: function () {
       this.$el = $(".js-scene-filmInfo");
       this.$el.on("click", ".back", this.onItemBackClick)
-      this.$el.on("click", ".voiceover", this.onItemClick)
       this.renderItems(App.filmInfo);
       _inited = true;
     },
@@ -15,14 +14,12 @@
       $(".header").show();
       window.App.showContent(scene);
     },
-    onItemClick: function (e) {
-       var url = e.currentTarget.getAttribute("data-url");
-    
-    },
+
     show: function () {
       if (!_inited) {
         this.init();
       }
+      console.log(this)
       this.$el.show();
     },
     hide: function () {
