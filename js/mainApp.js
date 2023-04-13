@@ -8,6 +8,7 @@
 
     initialize: function () {
       this.$wrap = $(".app");
+      $(".bg").show();
 
       $$legend.show();
 
@@ -20,6 +21,7 @@
     setEvents: function () {
       var self = this,
         $bg = $(".bg");
+    $bg = $(".bg").show()
 
       // click on menu item
       $(".menu").on("click", ".menu-item", function (e) {
