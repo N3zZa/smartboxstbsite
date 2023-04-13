@@ -221,9 +221,7 @@ async function getAnime() {
 body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     height: 100vh;
-    
 }
 
 p,
@@ -236,7 +234,6 @@ h3, h4, li {
     max-width: 1000px;
     margin: 0 auto;
     padding: 30px;
-    background: url(./images/bg.jpg); 
 }
 a {
     text-decoration: none;
@@ -453,8 +450,20 @@ p {
     margin-bottom: -5px;
     border-radius: 5px;
 }
+.bg {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url(./images/stars.png);
+            z-index: -1;
+        }
+
 </style>
 <body>
+
+<div class="bg"></div>
 <div id="app" class="wrap">
         <div class="header navigation-items">
                 <li class="navigation-item nav-item" id='Films'>Фильмы</li>
