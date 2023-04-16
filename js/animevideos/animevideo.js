@@ -18,7 +18,7 @@
     },
 
     setEvents: function () {
-      var url = "https://c45n.bazonserver.site/manifest/92519/1/s1e1_720.mp4/index.m3u8?hash=aHhU90EQRzezcY4P2r6Fhg&expires=1681715238&id=92519&s=1&name=s1e1_720.mp4"
+      var url = "https://d35r.bazonserver.site/manifest/89427/1/s1e1_720.mp4/index.m3u8?hash=6NA75G4J4wvIvBnks5sluw&expires=1681715546&id=89427&s=1&name=s1e1_720.mp4"
       Player.play({
         url: url,
         type: "m3u8",
